@@ -1,0 +1,1246 @@
+Python 5th Sem CSE 
+--------------------
+Date :: 23 Feb 2022
+---------------------
+
+List Data Structure :
+=====================
+What is List ?
+Ans : List is build in DS .
+Already created only we have to use 
+to store diff diff data item 
+
+
+How to create a List 
+--------------------
+1.creation of empty list 
+--------------------------
+list =[]
+
+list = []
+print(list)
+
+l = []
+print(l)
+print(type(l))
+
+ = ['surendra', "priyanka"]
+print(l)
+
+l
+
+
+
+2. creation of list With Dynamic Input 
+---------------------------------------
+we will use eval function 
+
+list=eval(input("enter a list"))
+
+at execution time we have to must provide [] as input
+
+
+l = eval(input("enter a list "))
+print(l)
+
+
+ 
+
+3. creation of list using list() function 
+-----------------------------------------
+l=list((10,20,2))
+
+
+4.creation of list using split() function 
+-----------------------------------------
+msg="python is best language for AI"
+l=msg.split()
+
+
+
+5.Creation of list Directly :
+-----------------------------
+list=[10,20,30,'Surendra','priyanka',40]
+
+
+                              Accessing of List :
+                             ====================
+
+1. we can access by using Index :
+--------------------------------
+we can access in forword direction and backword direction 
+list=[10,20,30]
+print(list[0])
+print(list[-2])
+
+
+2. we can access by using Slice Operator: 
+----------------------------------------
+
+list=[10,20,30,40,50,60]
+print(list[0:5])
+print(list[1:6:2])
+
+
+Question :
+------------
+List is Mutable in nature or not ?
+mutable --> chanageble
+imutable --> fixed / non changeable ( once it created )
+
+
+ans : yes it is mutable
+once we created list after that based on our requiredment we can add or deleted data from the list , this concept technically called as Growable in nature .
+
+Because : 
+
+list=[10,20,30,40,50,60]
+list[5]=999
+
+
+
+                            Traversing of List 
+                           =====================
+ we can traverse using Loop 
+-----------------------------                           
+ using while loop :
+ ------------------
+ list=[10,20,30,40,50]
+ 
+ print("Values are :")
+while(i < len(l)):
+    print(l[i])
+    i = i+1
+
+ 
+ using for loop:
+ ---------------
+ list=[10,20,30,40,50]
+ 
+ 
+ travase list by using for loop
+
+l = [10, 20, 30, 40, 50, 60]
+for i in l:
+    print(i)
+ 
+ 
+ 
+qn : create a list and display the number which is divisible by 10 and 5 
+
+qn : create a list and display the number wich is not divisible by 10 and 5 
+
+qn : create a list with differenet types of value and display each value and its type
+
+qn : create a list and check your list cantain how many int , how many string and how     many float values are present 
+
+qn : create a list and display element by index postive and negative both 
+
+qn : create a list and replace int data with * 
+
+                            Function List 
+                            =============
+                                                       
+ If we want to know any information about list we can use index(),count() ,len()  function                             
+
+1. index()
+-------------
+--> return the first occurance index 
+
+l=[10,20,30,40]
+print(l.index(20)]
+
+2. count()
+------------
+-->return the number of occurance
+l=[10,20,30,40,20]
+print(l.count(20)]
+
+3. len(list)
+-----------
+l=[10,20,30,40]
+print(len(l)]
+
+
+
+If we want to perform any operation / manupulation in list we can use append() , insert(),extend() , remove() , pop() function .
+
+4. append()
+-----------
+l=[10,20]
+l.append("surendra")
+l.append("priyanka")
+
+qn :  create a empty list and append all the ememenet from 100 to 200 which is divisible by either 3 or 5 .
+
+5. insert()
+------------
+-->By using append() function we can insert at the end but by uisng insert() function we   can insert() at any particular position .
+
+--> Insert function will take 2 argumement at which index you have to insert and what to insert .
+
+l=[10,20,30,40,50]
+l.insert(2,999)
+
+
+
+output of this bellow code :
+----------------------------
+l=[10,20,30,40,50]
+l.insert(-2,444)
+
+
+l=[10,20,30,40,50]
+l.insert(-22,111)
+
+
+6. extend() function:
+--------------------
+If we want to add all elemenet of one list to another list then we can use extend() function 
+
+oldGfList=["c","java","python","php","ui"]
+newGfList=["Math","AI","IOT","M2M","cloud"]
+
+oldGfList.extend(newGfList)   # newGfList will add 
+
+7.remove() function :
+---------------------
+by using remove() function we can remove specified item from the list 
+l=[10,20,30,40,50]
+l.remove(40)
+
+if value will not match then it will give ValueError
+
+8. pop() function without argumnet:
+-----------------------------------
+It will remove and return the last elemenet from list 
+
+l=[10,20,30,40,50]
+print(l.pop()) 
+print(l.pop())
+
+Note : If your list doest contain any item then it will give IndexError
+
+8. pop() function with argumnet:
+--------------------------------
+If we will index as an agrument then 
+ 
+l=[10,20,30,40,50]
+print(l.pop(2)) 
+
+
+summary :
+--------
+1. list is mutable based on requiremnet we can  increase and decrease the size (means growable in nature )
+
+list of function used for list information :
+----------------------------------------------
+len()
+count()
+index()
+
+
+
+https://www.tinkercad.com/learn/project-gallery;collectionId=OMOZACHJ9IR8LRE
+
+list of function used for list operation /manupulation :
+--------------------------------------------------------
+append()
+insert()
+extend()
+remove()
+pop()
+
+
+
+
+
+
+Date :: 24 Feb 2022
+---------------------
+List of Function to arrange a list 
+-----------------------------------
+1.sort()
+--------
+with numbers 
+-----------
+
+l = [5, 1, 2, 33, 21]
+l.sort()
+print(l)
+
+
+with string:
+--------------
+l = ["cat", "dog", "apple", "ball"]
+l.sort()
+print(l)
+
+
+mixed value 
+-------------
+
+
+
+qn : by default the list is sort in ascending order can we sort in descending order.
+ans : yes
+
+l = [5, 1, 2, 33, 21]
+l.sort(reverse=True)
+print(l)
+
+
+                    Arithmetic Operation on List 
+                    =============================
+we can use +  and * operator along with list 
+
++  ---> concantation operator 
+
+*  ----> iterrating / repetation operator 
+
++
+------
+l1=[10,20,30,40,50]
+l2=[90,80,70,60,50]
+l3=l1+l2
+print(l3)
+
+
+Note : In both side list object is required otherwise it will give type error 
+
+
+ans : join l2 all value with l1 without using + operator 
+
+
+                    Relational Operator on List :
+                    -----------------------------
+                        < > <= >= == != 
+
+qn : create 2 list with  int data perform all operaion using all these symbols(<  > <= >= == != )
+
+qn : create 2 list with  string data perform all operaion using all these symbols (<  > <= >= == != )
+
+
+
+                    Membership Operator along with List 
+                    ====================================
+1. in operator 
+2. not in operator
+
+
+l=[10,20,30,40,50]
+
+print(10 in l)
+print(10 not in l)
+
+
+
+Qn : is it possible to delete all the elemenet from the list 
+ans : 
+
+clear()
+
+l=[10,20,30,40]
+print(l)
+l.clear()
+print(l)
+
+Qn 
+------------
+Python program to interchange first and last elements in a list
+Python program to swap two elements in a list
+Find out the min and max value from the list 
+Sum of number digits in List
+
+
+Nested List  just Like Matrix :
+===============================
+l=[[10,20,30],[40,50,60],[70,80,90]]
+
+print direcatly as a list 
+print row wise 
+print in matrix style 
+
+
+
+Date 26 - 02- 2022:
+-------------------
+Tuple Data Structure 
+---------------------
+- exactly same as list 
+- but tuple is immutable in nature 
+- once it created we cant perform any changes 
+
+
+Creation of Tuple Object 
+--------------------------
+1. create directly 
+--------------------
+t1 = (10, 20, 30)
+print(t1)
+print(type(t1))
+
+2.create empty tuple ()
+-------------------------
+t=()
+
+
+Do you know we can craete tuple without using () 
+---------------------------------------------------
+t = 10, 20, 30
+print(t)
+print(type(t))
+
+
+output of the bellow code 
+---------------------------
+t=(10)
+print(t)
+print(type(t))
+
+
+solution is :
+-------------
+add comma
+
+t=(10,)
+print(t)
+print(type(t))
+
+
+
+3. we can create tuple using tuple()function :
+----------------------------------------------
+convert list to tuple
+
+list = [10, 20, 30, 40]
+t = tuple(list)
+print(t)
+
+
+4. we can create tuple  using range() function :
+--------------------------------------------------------
+t=tuple(range(10,20,2))
+print(t)
+
+
+
+                            How to Access Elemenet of Tuple 
+                            --------------------------------
+1.By Using index:
+----------------
+t=(10,20,30,40,50)
+print(t[0])
+print(t[-1])
+print(t[150])
+
+2.By using Slice operator :
+---------------------------
+t=(10,20,30,40,50)
+print(t[1:4])
+print(t[::2])
+
+Tuple vs Immutability :
+-----------------------
+- Once we created tuple , we cannot change its content 
+
+t=(10,20,30,40,50)
+t[1]=70
+
+
+Mathematical Operator :
+-----------------------
+    +
+---------
+t1=(10,20,30,40,50)
+t2=(50,60,40,80,90)
+t3=t1+t2
+
+
+(10,20,30,40,50,50,60,40,80,90)
+(60,80,70,120,140)
+
+print(t3)
+
+    *
+---------
+t1=(10,30,50)
+t2=t1*3
+print(t2)
+
+
+
+                                List of Functions of Tuple 
+                               -----------------------------
+
+1. len():
+--------
+t=(10,20,30,40,50)
+print(len(t))
+
+2. count():
+-----------
+t=(10,20,30,10,50)
+print(t.count(10))
+
+
+3. index()
+----------
+t=(10,20,30,40,50)
+print(t.index(30))
+print(t.index(60))
+
+
+4. sorted()
+------------
+t=(45,14,25,35,75)
+t1=sorted(t)
+print(t1)
+
+5. min() and max():
+-------------------
+t = (42, 45, 10, 24, 15, 74, 85, 145, 201)
+print(min(t))
+print(max(t))
+
+6. cmp()
+---------
+-> It will compare the elemenets of both tuples
+-> If both tuples are equal then return 0 .
+-> If first tuple is less than second tuple then it return -1 
+-> If the first tuple is greater than second tuple then it will return 1
+
+ 
+t1 = (10, 20, 30, 40)
+t2 = (50, 60, 70, 80, 90)
+
+print(cmp(t1, t2))
+print(cmp(t1, t3))
+print(cmp(t2, t3))
+
+
+
+Tuple packing and Unpacking
+----------------------------
+Tuple packing
+--------------
+a = 10
+b = 20
+c = 30
+d = 40
+t = 10,20,30,40,
+print(t)
+
+Unpacking
+----------
+t=(10,20,30,40,)
+a,b,c,d=t
+print("a",a)
+print("b",a)
+print("c",a)
+print("d",a)
+
+
+Output of the bellow code :
+----------------------------
+t = (10, 20, 30, 40,50)
+a, b, c, d = t
+print("a", a)
+print("b", a)
+print("c", a)
+print("d", a)
+
+
+what is the differenece between List and Tuple 
+-----------------------------------------------
+
+
+
+
+
+
+                                    Set Data Structue:
+                                 ------------------------
+                                
+-For storing of group of unique value then we can use set 
+-In set duplicate are not allowed 
+-Insertaion order is not preserved so we cant access element by using sclicing and by using index 
+
+- set objcet is mutable 
+- {} is used to craete  set objcet 
+- set is very helpful to perform math operations 
+
+Creation of Set Objcet 
+------------------------
+1. Direct Creation :
+---------------------
+
+s = {10, 20, 30, 40}
+print(s)
+print(type(s))
+
+2. Create set using set() function 
+----------------------------------
+
+s = set(range(10))
+print(s)
+
+
+
+3. create set object  from list 
+-----------------------------------
+l = [10, 20, 30, 44, 50]
+s = set(l)
+print(s)
+
+ 
+Ouput of bellow code :
+----------------------
+l=[10,20,30,10,50,20,60,40,60]
+s=set(l)
+print(s)
+
+
+what will be the output of bellow code 
+--------------------------------------
+s={}
+print(type(s))
+
+dict 
+
+
+s=set()
+print(s)
+print(type(s)
+
+
+
+            List of Function of Set 
+            =======================
+1. add(val)
+-----------
+s = {10, 20, 30}
+s.add(55)
+print(s)  
+
+
+2. update(x,y,z):
+-----------------
+s = {20, 40, 50}
+l = [40, 50, 60, 10]
+s.update(l, range(6))
+print(s)
+
+
+Note : yes we can use list 
+
+- To add multiple items to the set.
+- Arguments can be Iterable objects like List,Tuple, Range
+  etc.
+- All elements present in the given Iterable objects will be added to the set
+
+s = {20, 40, 50}
+l = (40, 50, 60, 10)
+s.update(l, range(6))
+print(s)
+
+
+Qn : Difference between add() and update() function ?
+
+3.copy()
+--------
+
+s = {10, 20, 30}
+s1 = s.copy()
+print(s1)
+
+
+
+
+
+what will be the out put 
+------------------------
+
+s = {10, 20, 30}
+s1 = s.copy()
+print(s1)
+print(s1 == s)
+
+
+4.pop()
+-------
+delete random element
+
+s = {25, 52, 63, 89}
+print(s)
+print(s.pop())
+print(s)
+
+
+5.
+remove(x):
+---------
+s = {25, 52, 63, 89}
+print(s)
+s.remove(63)
+print(s)
+
+
+
+s = {25, 52, 63, 89}
+print(s)
+print(s.remove(85)
+print(s)
+
+
+
+6. discard(x)
+----------
+
+s = {25, 52, 63, 89}
+print(s)
+s.discard(63)
+print(s)
+
+Note :: If value is not present the it wont give error 
+
+what id the diff pop() vs discard()
+
+
+7. clear()
+----------
+
+s = {25, 52, 63, 89}
+print(s)
+s.clear()
+print(s)
+
+
+                Mathematical Operations on set 
+                ==============================
+
+                            union():
+                            --------
+
+x.union(y) We can use this function to return all elements present in both sets
+
+x.union(y) OR x|y.
+
+x = {10, 20, 30, 777}
+y = {777, 40, 50, 60}
+print (x.union(y))  
+print (x|y) 
+
+
+                            intersection():
+                            ---------------
+It will returns common elements present in both x and y.
+
+x = {10, 33, 30, 40, 77}
+y = {30, 40, 50, 60, 90}
+print(x.intersection(y))
+print(x & y)
+
+                            difference():
+                            -------------
+x.difference(y) OR x-y.
+it wll Returns the elements present in x but not in y
+
+x = {10, 20, 30, 40}
+y = {30, 40, 50, 60}
+print(x.difference(y))
+print(x-y)
+print(y-x)
+
+
+                        symmetric_difference():
+                        -----------------------
+                        
+x.symmetric_difference(y) OR x^y.
+It will Returns elements present in either x OR y but not in both.
+
+x = {10, 20, 30, 40}
+y = {30, 40, 50, 60}
+print (x.symmetric_difference(y)) 
+print(x^y)
+
+
+
+                    Membership Operators in set : (in, not in)
+                    ------------------------------------------
+
+    in
+----------
+
+s = set("surendra")
+print(s)
+print('u' in s)
+print('a' in s)
+print('x' in s)
+
+
+  not in
+----------
+
+s = set("surendra")
+print(s)
+print('u' not in s)
+print('a' not in s)
+print('x' not in s)
+
+
+Note : 
+In set slicing and indexing concept is not applicable 
+
+s = {10,20,30,40}
+print(s[0]) 
+print(s[1:3])
+
+
+
+
+            Dict 
+        ===========
+If we want to represent a group of objects in the form of key-value pairs then we will use Dictionary .
+
+Duplicate keys are not allowed but values can be duplicated.
+
+Dictionaries are mutable .
+
+indexing and slicing concepts are not applicable
+
+
+How to create a dict :
+-----------------------
+empty dict 
+-----------
+
+d = {} OR d = dict()
+
+another way 
+--------------
+# create a empty dict and add value individually
+d = {}
+d[11] = "surendra"
+d[12] = "priyanka"
+d[13] = "zini"
+d[14] = "rahul"
+print(d)
+
+
+another way (dircet way)
+-------------------------
+
+d = {11:'surendra' ,12:'priyanka', 13:'rahul'}
+
+Access data from dict 
+-----------------------
+
+d = {11: 'surendra', 12: 'priyanka', 13: 'rahul'}
+print(d)
+print(d[11])
+print(d[55])
+
+qn : output?
+
+d = {"name": "priyanka", "age": 24}
+print(d)
+print(d["name"])
+
+ans : 
+
+
+We are trying to access a key wich is not avaiable 
+--------------------------------------------------
+d = {11: 'surendra', 12: 'priyanka', 13: 'rahul'}
+print(d[78])
+
+# here will get KeyError 
+
+
+How to check a key is present in dict or not :
+----------------------------------------------
+Ans : by using has_key()
+
+d = {11: 'surendra', 12: 'priyanka', 13: 'rahul'}
+print(d.has_key(13) 
+
+it is return 1 that means kwy is avaiable 
+
+
+
+d = {11: 'surendra', 12: 'priyanka', 13: 'rahul'}
+print(d.has_key(99) 
+
+it is return 0 that means key  is not avaiable 
+
+Note : has_key will not work in python3 
+
+Yes for that we have alternative solution 
+
+dict = {10: "surendra", 20: "zini", 30: "priyanka", 40: "jack"}
+
+
+if 40 in dict:
+    print("success")
+else:
+    print("fail")
+
+
+Qn : wap to enter bf name and gf name strore in dict and display in output screen
+here bf --> key and gf-->value 
+
+plan : 
+-----
+ask to the user how many record to insert stored in valriable(size)
+then take i=1 and go to untill i<=size 
+then inside that loop ask key and value to the user 
+then assign value to key 
+then incemnet i value 
+
+
+
+dict = {}
+
+size = int(input("enter how many record u eant to insert"))
+
+i = 1
+
+while i <= size:
+    bfname = input("enter bf name : ")
+    gfname = input("enter gf name : ")
+    dict[bfname] = gfname
+    i = i+1
+
+print("-------Bf Gf information--------")
+for i in dict:
+    print("Bf ->", i, "Gf ->", dict[i])
+    
+
+with header information :
+-------------------------
+size = int(input("enter how many record u eant to insert"))
+
+i = 1
+
+while i <= size:
+    bfname = input("enter bf name : ")
+    gfname = input("enter gf name : ")
+    dict[bfname] = gfname
+    i = i+1
+
+print("BF", "\t", "GF")
+for i in dict:
+    print(i, "--------", dict[i])
+    
+
+Update Dict :
+-----------
+
+dict = {10: "surendra", 20: "zini", 30: "priyanka", 40: "jack"}
+dict[20] = "lime"  # this is code for update 
+print(dict)
+
+what will be the output of bellow code:
+---------------------------------------
+
+dict = {10: "surendra", 20: "zini", 30: "priyanka", 40: "jack"}
+dict[999] = "lime"  # 
+print(dict)
+
+here if the key is not availble then it will be added in dict with that specifed key and value (means new record will be insert)
+
+output :
+--------
+dict = {10: "surendra", 20: "zini", 30: "priyanka", 40: "jack"}
+dict[999] = ""
+print(dict)
+
+output :
+----------
+dict = {10: "surendra", 20: "zini", 30: "priyanka", 40: "jack"}
+dict[""] = ""
+print(dict)
+
+output:
+-------
+dict = {10: "surendra", 20: "zini", 30: "priyanka", 40: "jack"}
+dict[] = ""
+print(dict)
+
+# invalid syntax
+
+Up to now we completed how to insert and update 
+------------------------------------------------
+Next how to delete key from the dict 
+--------------------------------------
+1st way :
+---------
+by uisng del 
+
+dict = {10: "surendra", 20: "zini", 30: "priyanka", 40: "jack"}
+
+del dict[40]
+
+print(dict)
+ 
+Note : Here key delete means key along with specified value 
+
+output :
+----------
+dict = {10: "surendra", 20: "zini", 30: "priyanka", 40: "jack"}
+
+del dict[55]
+
+print(dict) 
+ 
+Here the key is not avaiable then we will get KeyError
+
+2nd way of deletion :
+---------------------
+Here will delete entire dict 
+we will use clear() 
+
+
+dict = {10: "surendra", 20: "zini", 30: "priyanka", 40: "jack"}
+print(dict)
+dict.clear() # code for clear all record and make dict as empty
+print(dict)
+ 
+Note : Here all the record will be delete not dict 
+
+3rd way of deletion :
+----------------------
+
+d = {10: "surendra", 20: "zini", 30: "priyanka", 40: "jack"}
+print(d)
+del d  # code for delete entire dict
+print(d)
+
+Note : Here all the record will be delete along with dict means entire dict
+
+
+output of the bellow code:
+---------------------------
+
+dict = {10: "surendra", 20: "zini", 30: "priyanka", 40: "jack"}
+print(dict)
+del dict # code for delete entire dict
+print(dict) 
+
+
+        Functions inside Dict 
+        ---------------------
+        
+1. len()
+--------
+
+len(dict)
+
+d = {10: "surendra", 20: "zini", 30: "priyanka", 40: "jack"}
+
+print(len(d)) # 4
+
+2. get()
+----------
+
+get(key)
+
+used to get the value of a key 
+
+d = {10: "surendra", 20: "zini", 30: "priyanka", 40: "jack"}
+
+print(d.get(20))  
+
+output :
+-------
+d = {10: "surendra", 20: "zini", 30: "priyanka", 40: "jack"}
+
+print(d.get(999))  
+
+Note : if the kwy not aviable the we will get default value (None)
+
+3. pop()
+---------
+pop(key)
+
+it will remove key and value and return the key 
+ 
+d = {10: "surendra", 20: "zini", 30: "priyanka", 40: "jack"}
+
+print(d.pop(20))  # zini 
+
+Note : here it will delete the key and return the deleted key 
+
+
+output:
+-------
+d = {10: "surendra", 20: "zini", 30: "priyanka", 40: "jack"}
+
+print(d.pop(999))  
+
+Note : If the key is not avaiable then we will get KeyError
+
+
+4. popitem()
+-------------
+It will remove last insrted item from dict and return that element(both key and value) in the form of tuple
+
+d = {10: "surendra", 20: "zini", 30: "priyanka", 40: "jack"}
+
+print(d.popitem())   # (40: "jack")
+
+
+output:
+-------
+d = {10: "surendra", 20: "zini", 30: "priyanka", 40: "jack"}
+d[999]="lime"
+print(d.popitem()) 
+
+
+5.keys()
+--------
+It will return all the keys form dict 
+
+
+d = {10: "surendra", 20: "zini", 30: "priyanka", 40: "jack"}
+print(d.keys())  #dict_keys([10, 20, 30, 40])
+
+here if we will print d.keys() it will return dict_keys objcet as dict_keys([10, 20, 30, 40])
+
+
+How to print each key individually:
+----------------------------------
+use loop 
+
+d = {10: "surendra", 20: "zini", 30: "priyanka", 40: "jack"}
+
+for i in d.keys():
+    print(i)
+    
+ 
+6.values()
+---------
+It will return all the value form dict 
+
+d = {10: "surendra", 20: "zini", 30: "priyanka", 40: "jack"}
+print(d.values())  # dict_values(['surendra', 'zini', 'priyanka', 'jack'])
+
+
+How to print each key individually:
+----------------------------------
+use loop 
+
+d = {10: "surendra", 20: "zini", 30: "priyanka", 40: "jack"}
+
+for i in d.values():
+    print(i)
+
+
+7.items()
+----------
+It will return list of tuples as key value pairs
+
+
+d = {10: "surendra", 20: "zini", 30: "priyanka", 40: "jack"}
+
+print(d.items()) #dict_items([(10, 'surendra'), (20, 'zini'), (30, 'priyanka'), (40, 'jack')])
+
+
+
+Output of bellow code :
+-----------------------
+d = {10: "surendra", 20: "zini", 30: "priyanka", 40: "jack"}
+
+print("key \t value")
+print("--------------")
+for key in d.items():
+    print(key)
+    
+    
+Note : d.items() will return dict_items([(10, 'surendra'), (20, 'zini'), (30, 'priyanka'), (40, 'jack')])
+    
+
+
+
+How to print key and value in line by line 
+--------------------------------------------
+d = {10: "surendra", 20: "zini", 30: "priyanka", 40: "jack"}
+
+print("key \t value")
+print("--------------")
+for key, value in d.items():
+    print(key, "\t", value)
+
+
+
+8. update () 
+--------------
+d1.update(d2)
+It will add all the item present in d1 will be added in d2 dict
+
+d1 = {10: "surendra", 20: "zini", 30: "priyanka", 40: "jack"}
+
+d2 = {50: "lime", 60: "scoot"}
+
+d1.update(d2)
+
+print(d1) #{10: 'surendra', 20: 'zini', 30: 'priyanka', 40: 'jack', 50: 'lime', 60: 'scoot'}
+
+
+9.cpoy()
+--------
+it is used to create duplicate dict 
+
+
+
+d1 = {10: "surendra", 20: "zini", 30: "priyanka", 40: "jack"}
+
+d2 = d1.copy()
+
+print(d1) #{10: 'surendra', 20: 'zini', 30: 'priyanka', 40: 'jack'}
+
+print(d2) #{10: 'surendra', 20: 'zini', 30: 'priyanka', 40: 'jack'}
+
+
+
+10. setdefault() 
+------------------
+
+setdefault(key,value) 
+
+
+If the key is avaiable then it will return that value which is associted as key 
+
+if the key is not avaiable then new key and value 
+
+
+d = {10: "surendra", 20: "zini", 30: "priyanka", 40: "jack"}
+
+print(d.setdefault(20, "zini")) #zini
+print(d.setdefault(30, "zini")) #priyanka
+print(d.setdefault(999,"Sony")) 
+
+
+
+
+output:
+-------
+d = {10: "surendra", 20: "zini", 30: "priyanka", 40: "jack"}
+
+
+print(d.setdefault(999, "lime")) #lime
+
+print(d) #{10: 'surendra', 20: 'zini', 30: 'priyanka', 40: 'jack', 999: 'lime'}
+
+
+How to take dict as user input :
+-------------------------------
+by using eval() function 
+
+d = eval(input("enter dict : "))
+
+print(d)
+
+
+
